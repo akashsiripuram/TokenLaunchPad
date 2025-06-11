@@ -1,6 +1,7 @@
 import { WalletModalProvider,WalletMultiButton,WalletDisconnectButton } from "@solana/wallet-adapter-react-ui"
 import '@solana/wallet-adapter-react-ui/styles.css';
 import { WalletProvider,ConnectionProvider } from "@solana/wallet-adapter-react";
+import { TokenLaunchpad } from "./components/TokenLaunchPad";
 function App() {
   
   return (
@@ -11,6 +12,8 @@ function App() {
             <WalletMultiButton/>
             <WalletDisconnectButton/>
           </div>
+        
+          <TokenLaunchpad/>
         </WalletModalProvider>
       </WalletProvider>
     </ConnectionProvider>
