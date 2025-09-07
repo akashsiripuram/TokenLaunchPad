@@ -6,7 +6,7 @@ import { Toaster } from 'sonner';
 
 function App() {
   return (
-    <ConnectionProvider endpoint={"https://api.mainnet-beta.solana.com"}>
+    <ConnectionProvider endpoint={"https://api.devnet.solana.com"}>
       <WalletProvider wallets={[]} autoConnect>
         <WalletModalProvider>
           <div className="min-h-screen bg-gray-900 text-white">
